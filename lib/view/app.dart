@@ -51,38 +51,38 @@ class _Home extends StatelessWidget {
                 builder: (context) => TagReadPage.withDependency(),
               )),
             ),
-            FormRow(
-              title: Text('Ndef - Write'),
-              trailing: Icon(Icons.chevron_right),
-              onTap: () => Navigator.push(context, MaterialPageRoute(
-                builder: (context) => NdefWritePage.withDependency(),
-              )),
-            ),
-            FormRow(
-              title: Text('Ndef - Write Lock'),
-              trailing: Icon(Icons.chevron_right),
-              onTap: () => Navigator.push(context, MaterialPageRoute(
-                builder: (context) => NdefWriteLockPage.withDependency(),
-              )),
-            ),
-            if (Platform.isAndroid)
-              FormRow(
-                title: Text('Ndef - Format'),
-                trailing: Icon(Icons.chevron_right),
-                onTap: () => Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => NdefFormatPage.withDependency(),
-                )),
-              ),
+            // FormRow(
+            //   title: Text('Ndef - Write'),
+            //   trailing: Icon(Icons.chevron_right),
+            //   onTap: () => Navigator.push(context, MaterialPageRoute(
+            //     builder: (context) => NdefWritePage.withDependency(),
+            //   )),
+            // ),
+            // FormRow(
+            //   title: Text('Ndef - Write Lock'),
+            //   trailing: Icon(Icons.chevron_right),
+            //   onTap: () => Navigator.push(context, MaterialPageRoute(
+            //     builder: (context) => NdefWriteLockPage.withDependency(),
+            //   )),
+            // ),
+            // if (Platform.isAndroid)
+            //   FormRow(
+            //     title: Text('Ndef - Format'),
+            //     trailing: Icon(Icons.chevron_right),
+            //     onTap: () => Navigator.push(context, MaterialPageRoute(
+            //       builder: (context) => NdefFormatPage.withDependency(),
+            //     )),
+            //   ),
           ]),
-          FormSection(children: [
-            FormRow(
-              title: Text('About'),
-              trailing: Icon(Icons.chevron_right),
-              onTap: () => Navigator.push(context, MaterialPageRoute(
-                builder: (context) => AboutPage(),
-              )),
-            ),
-          ]),
+          // FormSection(children: [
+          //   FormRow(
+          //     title: Text('About'),
+          //     trailing: Icon(Icons.chevron_right),
+          //     onTap: () => Navigator.push(context, MaterialPageRoute(
+          //       builder: (context) => AboutPage(),
+          //     )),
+          //   ),
+          // ]),
         ],
       ),
     );
