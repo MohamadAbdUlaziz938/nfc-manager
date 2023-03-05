@@ -29,6 +29,7 @@ class App extends StatelessWidget {
       home: _Home(),
       theme: _themeData(Brightness.light),
       darkTheme: _themeData(Brightness.dark),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -93,17 +94,17 @@ ThemeData _themeData(Brightness brightness) {
   return ThemeData(
     brightness: brightness,
      // Matches app icon color.
-    primarySwatch:  MaterialColor(0xFF4D8CFE, <int, Color>{
-      50: Color(0xFFEAF1FF),
-      100: Color(0xFFCADDFF),
-      200: Color(0xFFA6C6FF),
-      300: Color(0xFF82AFFE),
-      400: Color(0xFF689DFE),
-      500: Color(0xFF4D8CFE),
-      600: Color(0xFF4684FE),
-      700: Color(0xFF3D79FE),
-      800: Color(0xFF346FFE),
-      900: Color(0xFF255CFD),
+    primarySwatch:  MaterialColor(0xFFFDE025, <int, Color>{
+      50: Color(0xFFFFF9EA),
+      100: Color(0xFFFFF0CA),
+      200: Color(0xFFFFEAA6),
+      300: Color(0xFFFEE182),
+      400: Color(0xFFFEE068),
+      500: Color(0xFFFEDB4D),
+      600: Color(0xFFFEDF46),
+      700: Color(0xFFFEDE3D),
+      800: Color(0xFFFECF34),
+      900: Color(0xFFFDE025),
     }),
     appBarTheme: AppBarTheme(
       brightness: Brightness.dark,
